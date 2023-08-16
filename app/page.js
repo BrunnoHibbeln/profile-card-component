@@ -9,19 +9,19 @@ export default function Home() {
   return (
     <main className="relative bg-dark-cyan h-screen overflow-hidden">
       <Image
-        className="absolute w-[80rem] h-[80rem] -left-52 -top-[50rem]"
+        className="absolute w-[80rem] h-[80rem] sm:h-[75rem] -left-52 sm:-left-28 md:max-xl:-left-30 -top-[50rem]"
         src={bgTop}
         alt="Circle top"
       />
       <Image
-        className="absolute w-[80rem] h-[80rem] -right-52 -bottom-[50rem]"
+        className="absolute w-[80rem] h-[80rem] sm:h-[75rem] -right-52 sm:-right-28 -bottom-[50rem]"
         src={bgBottom}
         alt="Circle bottom"
       />
       <section className="absolute w-[100%] h-screen bg-transparent flex justify-center items-center">
-        <section className="relative w-[30rem] h-[31rem] bg-white rounded-3xl">
+        <section className="relative w-[30rem] sm:w-[100%] sm:m-6 h-[31rem] sm:h-auto bg-white rounded-3xl">
           <Image
-            className="w-[30rem] rounded-t-3xl"
+            className="w-[30rem] sm:w-[100%] rounded-t-3xl"
             src={bgCard}
             alt="Background Card"
           />
@@ -46,23 +46,29 @@ export default function Home() {
               </h2>
             </section>
 
-            <div className="w-[100%] pt-6 border-b-2 border-dark-gray opacity-20" />
+            <div className="w-[100%] block pt-6 border-b-2 border-dark-gray opacity-20" />
 
-            <section className="w-[100%] pt-8 flex flex-row gap-20 justify-center items-center">
+            <section className="w-[100%] pt-8 sm:pb-8 flex flex-row gap-20 sm:gap-8 justify-center items-center">
               <article>
-                <h2 className="font-bold text-2xl text-very-dark">80K</h2>
+                <h2 className="font-bold text-2xl sm:text-xl text-very-dark">
+                  80K
+                </h2>
                 <h3 className="font-normal tracking-widest text-sm text-dark-gray">
                   Followers
                 </h3>
               </article>
               <article>
-                <h2 className="font-bold text-2xl text-very-dark">803K</h2>
+                <h2 className="font-bold text-2xl sm:text-xl text-very-dark">
+                  803K
+                </h2>
                 <h3 className="font-normal tracking-widest text-sm text-dark-gray">
                   Likes
                 </h3>
               </article>
               <article>
-                <h2 className="font-bold text-2xl text-very-dark">1.4K</h2>
+                <h2 className="font-bold text-2xl sm:text-xl text-very-dark">
+                  1.4K
+                </h2>
                 <h3 className="font-normal tracking-widest text-sm text-dark-gray">
                   Photos
                 </h3>

@@ -27,6 +27,10 @@ module.exports = {
         375: "23,5rem",
         line: "1px",
       },
+      screens: {
+        sm: { max: "500px" },
+        xl: "1440px",
+      },
     },
   },
   plugins: [],
