@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,11 +14,18 @@ module.exports = {
         "dark-grayish": "hsl(227, 10%, 46%)",
         "dark-gray": "hsl(0, 0%, 59%)",
       },
+      fontFamily: {
+        primary: ["var(--font-kumbh)"],
+      },
       fontSize: {
-        base: "1.125rem",
+        default: "1.125rem",
+      },
+      letterSpacing: {
+        widest: "0.2em",
       },
       spacing: {
         375: "23,5rem",
+        line: "1px",
       },
     },
   },
